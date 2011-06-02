@@ -2,7 +2,7 @@
 //	Some rights reserved: http://opensource.org/licenses/mit-license.php
 
 #import "JRSwizzle.h"
-#import <objc/objc-class.h>
+#import <objc/runtime.h>
 
 #define SetNSErrorFor(FUNC, ERROR_VAR, FORMAT,...)	\
 	if (ERROR_VAR) {	\
