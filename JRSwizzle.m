@@ -116,3 +116,11 @@
 }
 
 @end
+
+#if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
+@implementation NSObject (ClassName)
++ (NSString *)className {
+	return NSStringFromClass([self class]);
+}
+@end
+#endif

@@ -9,3 +9,9 @@
 + (BOOL)jr_swizzleClassMethod:(SEL)origSel_ withClassMethod:(SEL)altSel_ error:(NSError**)error_;
 
 @end
+
+#if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
+@interface NSObject (ClassName)
++ (NSString *)className;
+@end
+#endif
